@@ -15,10 +15,10 @@ from sklearn.preprocessing import StandardScaler
 
 # Load the saved model and scaler
 try:
-    with open('best_model.pkl', 'rb') as file:
+    with open('RandomForest.pkl', 'rb') as file:
         model = pickle.load(file)
 except FileNotFoundError:
-    st.error("Error: 'best_model.pkl' not found. Please make sure the model file exists.")
+    st.error("Error: 'RandomForest.pkl' not found. Please make sure the model file exists.")
     st.stop()
 except Exception as e:
     st.error(f"Error loading the model: {e}")
