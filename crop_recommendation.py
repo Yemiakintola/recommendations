@@ -150,6 +150,7 @@ target_columns = ['apple', 'banana', 'blackgram', 'chickpea', 'coconut', 'coffee
 X = df_encoded.drop(columns=target_columns, axis=1)
 y = df_encoded[target_columns]
 y = pd.DataFrame(columns=target_columns)
+
 # Scale numerical features
 numerical_features = ['N', 'P', 'temperature', 'humidity', 'ph', 'rainfall', 'K']
 scaler = StandardScaler()
